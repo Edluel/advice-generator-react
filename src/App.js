@@ -1,12 +1,29 @@
-import logo from './logo.svg';
 import './styles/app.css';
+import Search from './componentes/search/Search';
+import Advice from './componentes/advice/Advice';
+import { useState } from 'react';
 
 function App() {
+  const [data, setData] = useState();
+
+  async function randomAdvice() {
+
+    const response = await fetch('https://api.adviceslip.com/advice');
+    const random = await response.json();
+
+    setData(random);
+
+  }
+
+
+
   return (
     <div className="App">
-      <header className="App-header">
-        <h1>Test</h1>
-      </header>
+      <Search/>
+      <Advice
+        data={data}
+        randomAdvice={randomAdvice}
+      />
     </div>
   );
 }
