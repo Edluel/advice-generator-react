@@ -5,6 +5,7 @@ import { useState } from 'react';
 
 function App() {
   const [data, setData] = useState();
+  const [isPending, setIsPending] = useState(true);
 
   async function randomAdvice() {
 
@@ -19,10 +20,15 @@ function App() {
 
   return (
     <div className="App">
-      <Search/>
+      <Search
+        setData={setData}
+        setIsPending={setIsPending}
+      />
       <Advice
         data={data}
         randomAdvice={randomAdvice}
+        isPending={isPending}
+        setIsPending={setIsPending}
       />
     </div>
   );
