@@ -22,6 +22,12 @@ export default function SearchContainer(props) {
       setData(advice);
     }
 
+    if (searchType === "word" ){
+      const response = await fetch('https://api.adviceslip.com/advice/search/'+searchValue);
+      const advice = await response.json();
+      setData(advice)
+    }
+
   }
 
   return (

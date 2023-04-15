@@ -14,6 +14,8 @@ export default function Advice(props) {
     if (data) {
       setIsPending(false);
     }
+    
+
   }, [data]);
 
   const handleClick = () => {
@@ -24,7 +26,7 @@ export default function Advice(props) {
   return (
     <div className="advice">
       {isPending && <div>Loading...</div>}
-      {!isPending && <div>
+      {!isPending && data.slip && <div>
         <div className="advice-header">
           <h1>Advice #{data.slip.id}</h1>
         </div>
@@ -38,6 +40,9 @@ export default function Advice(props) {
           <img src={iconDice} alt="dice icon" />
         </div>
             
+      </div>}
+      {!isPending && data.message && <div>
+        <h2>{data.message.text}</h2>  
       </div>}
     </div>
   )
