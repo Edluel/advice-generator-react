@@ -4,6 +4,7 @@ import iconDice from '../../assets/images/icon-dice.svg'
 
 export default function Advice(props) {
   const {data, randomAdvice, isPending, setIsPending} = props;
+  const [adviceData, setAdviceData] = useState();
   
 
   useEffect(()=>{
