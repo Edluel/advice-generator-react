@@ -17,6 +17,5 @@ git clone https://github.com/your-username/advice-generator.git cd advice-genera
 
 This will start the app on your local machine. You can then access it by opening your browser and navigating to http://localhost:3000.
 
-Enjoy generating random advice!
 
 
