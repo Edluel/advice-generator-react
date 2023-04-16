@@ -17,6 +17,12 @@ export default function SearchContainer(props) {
     setIsPending(true);
 
     if (searchType === "id") {
+      if (isNaN(searchValue)) {
+        const response = await fetch('https://api.adviceslip.com/advice/'+0);
+        const advice = await response.json();
+        setData(advice);
+        return;
+      }
       const response = await fetch('https://api.adviceslip.com/advice/'+searchValue);
       const advice = await response.json();
       setData(advice);
