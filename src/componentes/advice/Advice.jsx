@@ -2,6 +2,8 @@ import React, { useEffect, useState } from 'react'
 import deskDivider from '../../assets/images/pattern-divider-desktop.svg'
 import mobileDivider from '../../assets/images/pattern-divider-mobile.svg'
 import iconDice from '../../assets/images/icon-dice.svg'
+import backIcon from '../../assets/images/left.png'
+import nextIcon from '../../assets/images/right.png'
 
 export default function Advice(props) {
   const {data, randomAdvice, isPending, setIsPending} = props;
@@ -34,6 +36,16 @@ export default function Advice(props) {
     randomAdvice();
   }
 
+  const handleBack = () => {
+    setIndex(index-1);
+    setAdviceData(data.slips[index-1]);
+  }
+
+  const handleNext = () => {
+    setIndex(index+1);
+    setAdviceData(data.slips[index+1]);
+  }
+
   return (
     <div className="advice">
       {isPending && <div>Loading...</div>}
@@ -48,21 +60,23 @@ export default function Advice(props) {
         <div className="advice-divider">
           <img src={windowWidth < 768 ? mobileDivider : deskDivider} alt="pattern divider" />
         </div>
+
         <div className="advice-navigation">        
-          {data.slips &&
-            <div className='advice-navigation-prev'>                   
-              <h3>prev</h3>
+          {data.slips && index > 0 &&
+            <div className='advice-navigation-prev' onClick={handleBack} >                   
+              <img src={backIcon} alt='previous-icon' style={{height: '20px'}}/>
             </div>
           }
           <div className="advice-navigation-dice" onClick={handleClick}>
             <img src={iconDice} alt="dice icon" />
           </div>
-          {data.slips && 
-            <div className='advice-navigation-next'>
-              <h3>next</h3>
+          {data.slips && index < data.total_results -1 &&
+            <div className='advice-navigation-next' onClick={handleNext}>
+              <img src={nextIcon} alt="next-icon"  style={{height: '20px'}}/>
             </div>
           }
         </div>
+        
       </div>}
       
       {!isPending && data.message && <div className='advice-message'>
