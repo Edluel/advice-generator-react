@@ -9,6 +9,12 @@ This is a web app built using React and Sass that generates random advice using 
 - These arrows change color and cursor to indicate when the user has reached the first or last result.
 - Form validation: The search bar has form validation that ensures the user inputs valid data.
 
+## <a id="live-demo">Live demo</a>
+
+Try the live version of the page [here](https://advice-generator-react-omega.vercel.app/)
+
+
+
 To use the app, simply clone the repository, install the dependencies, and run the app.
 
 bashCopy code
