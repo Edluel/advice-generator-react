@@ -1,4 +1,11 @@
-# Advice Generator
+# Advice Generator | Frontend Mentor
+
+- [Features](#features)
+- [Live Demo](#live-demo)
+- [Screenshots](#screenshots)
+- [How to Use](#how-to-use)
+- [Contributing](#contributing)
+- [License](#license)
 
 This is a web app built using React and Sass that generates random advice using an external API. It has the following features:
 
