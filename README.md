@@ -9,6 +9,8 @@
 
 This is a web app built using React and Sass that generates random advice using an external API. It has the following features:
 
+## <a id="features">Features</a>
+
 - Random advice generator: Clicking on a dice button generates a random advice from the API data.
 - Neon hover effect: The random button has a neon hover effect that adds a visual appeal to the app.
 - Search bar: A search bar allows the user to search for specific advice either by id or by string.
