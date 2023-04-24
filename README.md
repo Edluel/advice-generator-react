@@ -9,6 +9,7 @@
 
 This is a web app built using React and Sass that generates random advice using an external API. It has the following features:
 
+
 ## <a id="features">Features</a>
 
 - Random advice generator: Clicking on a dice button generates a random advice from the API data.
@@ -18,19 +19,35 @@ This is a web app built using React and Sass that generates random advice using 
 - These arrows change color and cursor to indicate when the user has reached the first or last result.
 - Form validation: The search bar has form validation that ensures the user inputs valid data.
 
+
 ## <a id="live-demo">Live demo</a>
 
 Try the live version of the page [here](https://advice-generator-react-omega.vercel.app/)
 
 
+## <a id="screenshots">Sceenshots</a>
+
+
+## <a id="how-to-use">How to use it</a>
 
 To use the app, simply clone the repository, install the dependencies, and run the app.
 
 bashCopy code
 
-git clone https://github.com/your-username/advice-generator.git cd advice-generator npm install npm start 
+- git clone https://github.com/your-username/advice-generator.git 
+- cd advice-generator 
+- npm install npm start 
 
 This will start the app on your local machine. You can then access it by opening your browser and navigating to http://localhost:3000.
 
+
+## <a id="contributing">Contribute</a>
+
+Feel free to submit pull requests or issues if you have suggestions for improvements. This is a practice project and any feedback is welcome.
+
+
+## <a id="license">License</a>
+
+This project is lincensed under the MIT license.
 
 
