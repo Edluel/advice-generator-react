@@ -1,6 +1,5 @@
 @import './variables';
 
-//mobile 295 desk 444
 
 .advice {
     background-color: $dark-grayish-blue;
@@ -35,6 +34,12 @@
             margin-left: 100px;
             margin-right: 100px;
 
+            &:hover {
+                box-shadow: 0 0 20px $neon-green;
+                transition: box-shadow 0.3s ease-in-out;
+
+            }
+
         }
 
         &-prev, &-next {
@@ -45,7 +50,20 @@
 
         &-prev { margin-right: 200px; }
         &-next { margin-left: 200px; }
-        
+
+        &-dice, &-prev, &-next { cursor: pointer; }
+
+    }
+
+    @media ( min-width: 444px ) {
+        &-header, &-content, &-divider, &-navigation {
+            width: 500px;    
+
+        }
+
+        &-navigation-prev { margin-right: 300px; }
+        &-navigation-next { margin-left: 300px; }
+
     }
 
 }
