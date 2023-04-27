@@ -26,20 +26,26 @@
         position: absolute;
         bottom: 0;
         transform: translateY(50%);
-        display: flex;
-        justify-content: space-around;
 
         &-dice {
             background-color: $neon-green;
             display: flex;
             padding: 10px;
             border-radius: 50%;
+            margin-left: 100px;
+            margin-right: 100px;
+
         }
 
         &-prev, &-next {
             padding-top: 10px;
+            position: absolute;
+        
         }
 
+        &-prev { margin-right: 200px; }
+        &-next { margin-left: 200px; }
+        
     }
 
 }

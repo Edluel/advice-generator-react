@@ -15,6 +15,7 @@ body h1 {
 }
 body p {
   color: hsl(193, 38%, 86%);
+  padding: 20px;
 }
 
 .advice {
@@ -36,15 +37,22 @@ body p {
   position: absolute;
   bottom: 0;
   transform: translateY(50%);
-  display: flex;
-  justify-content: space-around;
 }
 .advice-navigation-dice {
   background-color: hsl(150, 100%, 66%);
   display: flex;
   padding: 10px;
   border-radius: 50%;
+  margin-left: 100px;
+  margin-right: 100px;
 }
 .advice-navigation-prev, .advice-navigation-next {
   padding-top: 10px;
+  position: absolute;
+}
+.advice-navigation-prev {
+  margin-right: 200px;
+}
+.advice-navigation-next {
+  margin-left: 200px;
 }/*# sourceMappingURL=app.css.map */

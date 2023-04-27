@@ -13,7 +13,10 @@ body {
     //font
     font-family: $font-family;
     h1 { color: $neon-green;}
-    p { color: $light-cyan;}
+    p { 
+        color: $light-cyan;
+        padding: 20px;
+    }
 
     //bg-color
     background-color: $dark-blue;
