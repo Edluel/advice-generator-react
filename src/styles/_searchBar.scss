@@ -1,0 +1,25 @@
+@import 'variables';
+
+.search-container {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    width: 360;
+    justify-content: space-around;
+
+    input {
+        width: 200px;
+        padding: 3px 8px 3px 8px;
+
+    }
+
+    input, select, button { 
+        border-radius: 10px; 
+        cursor: pointer; 
+        background-color: $grayish-blue;
+        color: $light-cyan;
+
+    }
+
+
+}
