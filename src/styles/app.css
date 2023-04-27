@@ -87,6 +87,11 @@ body p {
   width: 200px;
   padding: 3px 8px 3px 8px;
 }
+@media (min-width: 444px) {
+  .search-container input {
+    width: 300px;
+  }
+}
 .search-container input, .search-container select, .search-container button {
   border-radius: 10px;
   cursor: pointer;

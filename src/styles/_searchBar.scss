@@ -11,6 +11,8 @@
         width: 200px;
         padding: 3px 8px 3px 8px;
 
+        @media ( min-width: 444px ) { width: 300px; };
+
     }
 
     input, select, button { 
