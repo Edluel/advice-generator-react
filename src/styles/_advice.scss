@@ -1,0 +1,45 @@
+@import './variables';
+
+//mobile 295 desk 444
+
+.advice {
+    background-color: $dark-grayish-blue;
+    border-radius: 10px;
+    margin-top: 40px;
+    position: relative;
+
+    &-header, &-content, &-divider, &-navigation {
+        display: flex;
+        justify-content: center;
+        width: 360px;
+        text-align: center;
+
+    }
+
+    &-divider {
+        padding-bottom: 60px;
+
+    }
+
+
+    &-navigation {
+        position: absolute;
+        bottom: 0;
+        transform: translateY(50%);
+        display: flex;
+        justify-content: space-around;
+
+        &-dice {
+            background-color: $neon-green;
+            display: flex;
+            padding: 10px;
+            border-radius: 50%;
+        }
+
+        &-prev, &-next {
+            padding-top: 10px;
+        }
+
+    }
+
+}
