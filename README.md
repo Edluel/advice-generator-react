@@ -26,6 +26,12 @@ Try the live version of the page [here](https://advice-generator-react-omega.ver
 
 
 ## <a id="screenshots">Sceenshots</a>
+Here are some screenshots of the page clone in action:<br>
+<img src="src/assets/screenshots/advice-generator-react-omega.vercel.app_(Samsung Galaxy S20 Ultra).png" width="30%" height="30%">
+<img src="src/assets/screenshots/advice-generator-react-omega.vercel.app_(Samsung Galaxy S20 Ultra) (1).png" width="30%" height="30%">
+<img src="src/assets/screenshots/advice-generator-react-omega.vercel.app_(Samsung Galaxy S20 Ultra) (2).png" width="30%" height="30%">
+<img src="src/assets/screenshots/advice-generator-react-omega.vercel.app_ (1).png" width="45%" height="45%">
+<img src="src/assets/screenshots/advice-generator-react-omega.vercel.app_ (2).png" width="45%" height="45%">
 
 
 ## <a id="how-to-use">How to use it</a>
