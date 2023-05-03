@@ -49,7 +49,7 @@ This will start the app on your local machine. You can then access it by opening
 
 ## <a id="contributing">Contribute</a>
 
-Feel free to submit pull requests or issues if you have suggestions for improvements. This is a practice project and any feedback is welcome.
+Feel free to submit pull requests or issues if you have suggestions for improvements.
 
 
 ## <a id="license">License</a>
